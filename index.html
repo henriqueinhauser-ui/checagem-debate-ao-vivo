@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sites e canais</title>
+<meta name="description" content="Checagem ao Vivo, Revista Fórum, Flávio Mentiu, Farol Brasil e Jornal do Campus USP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #e9eef3;
+  --surface: #ffffff;
+  --ink: #12233a;
+  --muted: #5b6b7f;
+  --line: #cfd9e3;
+  --accent: #1f5fd1;
+  --accent-ink: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1724;
+    --surface: #17243a;
+    --ink: #eaf0f7;
+    --muted: #9fb0c5;
+    --line: #2a3b55;
+    --accent: #6ea2ff;
+    --accent-ink: #0e1724;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.4;
+  min-height: 100vh;
+  padding: 40px 20px 56px;
+}
+main { max-width: 480px; margin: 0 auto; }
+h1 {
+  font-size: clamp(2.2rem, 9vw, 3rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+}
+.lead { color: var(--muted); margin: 0 0 32px; }
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin: 28px 0 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+a.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 18px;
+  min-height: 64px;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  text-decoration: none;
+}
+a.link:hover { border-color: var(--accent); }
+a.link:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+a.link:active { background: var(--accent); color: var(--accent-ink); }
+a.link:active .host { color: inherit; }
+.name { display: block; font-weight: 800; font-size: 1.1rem; }
+.host { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 2px; overflow-wrap: anywhere; }
+svg { flex: none; width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sites e canais</h1>
+  <p class="lead">Toque em um item para abrir.</p>
+
+  <h2>Sites</h2>
+  <ul>
+    <li><a class="link" href="https://checagemaovivo.org" target="_blank" rel="noopener">
+      <span><span class="name">Checagem ao Vivo</span><span class="host">checagemaovivo.org</span></span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a></li>
+    <li><a class="link" href="https://revistaforum.com.br" target="_blank" rel="noopener">
+      <span><span class="name">Revista Fórum</span><span class="host">revistaforum.com.br</span></span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a></li>
+    <li><a class="link" href="https://flaviomentiu.com.br" target="_blank" rel="noopener">
+      <span><span class="name">Flávio Mentiu</span><span class="host">flaviomentiu.com.br</span></span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a></li>
+  </ul>
+
+  <h2>Canais no YouTube</h2>
+  <ul>
+    <li><a class="link" href="https://youtube.com/@farolbrasiljonesmanoel" target="_blank" rel="noopener">
+      <span><span class="name">Farol Brasil</span><span class="host">youtube.com/@farolbrasiljonesmanoel</span></span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a></li>
+    <li><a class="link" href="https://youtube.com/cjeusp" target="_blank" rel="noopener">
+      <span><span class="name">Jornal do Campus (USP)</span><span class="host">youtube.com/cjeusp</span></span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a></li>
+  </ul>
+</main>
+</body>
+</html>
