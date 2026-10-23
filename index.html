@@ -3,58 +3,44 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sites e canais</title>
-<meta name="description" content="Checagem ao Vivo, Revista Fórum, Flávio Mentiu, Farol Brasil e Jornal do Campus USP.">
+<title>Durante o debate, veja a checagem</title>
+<meta name="description" content="Não deixe nenhum candidato mentir pra você. Durante o debate, veja a checagem.">
+<meta name="theme-color" content="#0049ab">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&family=Syne:wght@800&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #e9eef3;
-  --surface: #ffffff;
-  --ink: #12233a;
-  --muted: #5b6b7f;
-  --line: #cfd9e3;
-  --accent: #1f5fd1;
-  --accent-ink: #ffffff;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0e1724;
-    --surface: #17243a;
-    --ink: #eaf0f7;
-    --muted: #9fb0c5;
-    --line: #2a3b55;
-    --accent: #6ea2ff;
-    --accent-ink: #0e1724;
-  }
+  --blue: #0049ab;
+  --white: #ffffff;
+  --white-soft: rgba(255,255,255,.78);
+  --line: rgba(255,255,255,.55);
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; }
 body {
-  background: var(--bg);
-  color: var(--ink);
-  font-family: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--blue);
+  color: var(--white);
+  font-family: "Lexend", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   line-height: 1.4;
   min-height: 100vh;
-  padding: 40px 20px 56px;
+  padding: 56px 24px 64px;
 }
-main { max-width: 480px; margin: 0 auto; }
+main { max-width: 520px; margin: 0 auto; }
 h1 {
-  font-size: clamp(2.2rem, 9vw, 3rem);
+  font-family: "Syne", "Arial Black", Impact, sans-serif;
   font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-  margin: 0 0 8px;
+  text-transform: uppercase;
+  font-size: clamp(1.9rem, 9vw, 3rem);
+  line-height: 1.02;
+  margin: 0 0 28px;
 }
-.lead { color: var(--muted); margin: 0 0 32px; }
+h1 + h1 { margin-bottom: 56px; }
 h2 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  color: var(--muted);
-  margin: 28px 0 10px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--line);
+  text-transform: uppercase;
+  margin: 0 0 18px;
 }
 ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 a.link {
@@ -62,29 +48,27 @@ a.link {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding: 16px 18px;
   min-height: 64px;
-  background: var(--surface);
-  color: var(--ink);
-  border: 1px solid var(--line);
-  border-radius: 14px;
+  padding: 14px 18px;
+  color: var(--white);
   text-decoration: none;
+  border: 2px solid var(--line);
+  border-radius: 12px;
 }
-a.link:hover { border-color: var(--accent); }
-a.link:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
-a.link:active { background: var(--accent); color: var(--accent-ink); }
-a.link:active .host { color: inherit; }
-.name { display: block; font-weight: 800; font-size: 1.1rem; }
-.host { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 2px; overflow-wrap: anywhere; }
-svg { flex: none; width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+a.link:hover, a.link:active { background: var(--white); color: var(--blue); border-color: var(--white); }
+a.link:hover .host, a.link:active .host { color: var(--blue); }
+a.link:focus-visible { outline: 3px solid var(--white); outline-offset: 3px; }
+.name { display: block; font-weight: 600; text-transform: uppercase; letter-spacing: .01em; }
+.host { display: block; font-size: .8rem; color: var(--white-soft); margin-top: 2px; overflow-wrap: anywhere; }
+svg { flex: none; width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
 </style>
 </head>
 <body>
 <main>
-  <h1>Sites e canais</h1>
-  <p class="lead">Toque em um item para abrir.</p>
+  <h1>Não deixe nenhum candidato mentir pra você.</h1>
+  <h1>Durante o debate, veja a checagem.</h1>
 
-  <h2>Sites</h2>
+  <h2>🇧🇷 Onde vai ter:</h2>
   <ul>
     <li><a class="link" href="https://checagemaovivo.org" target="_blank" rel="noopener">
       <span><span class="name">Checagem ao Vivo</span><span class="host">checagemaovivo.org</span></span>
@@ -95,15 +79,11 @@ svg { flex: none; width: 20px; height: 20px; fill: none; stroke: currentColor; s
     <li><a class="link" href="https://flaviomentiu.com.br" target="_blank" rel="noopener">
       <span><span class="name">Flávio Mentiu</span><span class="host">flaviomentiu.com.br</span></span>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a></li>
-  </ul>
-
-  <h2>Canais no YouTube</h2>
-  <ul>
     <li><a class="link" href="https://youtube.com/@farolbrasiljonesmanoel" target="_blank" rel="noopener">
       <span><span class="name">Farol Brasil</span><span class="host">youtube.com/@farolbrasiljonesmanoel</span></span>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a></li>
     <li><a class="link" href="https://youtube.com/cjeusp" target="_blank" rel="noopener">
-      <span><span class="name">Jornal do Campus (USP)</span><span class="host">youtube.com/cjeusp</span></span>
+      <span><span class="name">Jornal do Campus - USP</span><span class="host">youtube.com/cjeusp</span></span>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a></li>
   </ul>
 </main>
